@@ -1,219 +1,84 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <title>Du Lịch Đà Nẵng - Travel DN</title>
-    <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        body{
-            background: linear-gradient(to right, #74ebd5, #ACB6E5);
-        }
-
-        header{
-            background:#0d3b66;
-            color:white;
-            padding:20px;
-            text-align:center;
-        }
-
-        nav{
-            background:#144f8b;
-            padding:10px;
-            text-align:center;
-        }
-
-        nav a{
-            color:white;
-            text-decoration:none;
-            margin:0 15px;
-            font-weight:bold;
-        }
-
-        nav a:hover{
-            color:yellow;
-        }
-
-        section{
-            width:90%;
-            margin:30px auto;
-            background:white;
-            padding:25px;
-            border-radius:10px;
-            box-shadow:0 5px 15px rgba(0,0,0,0.2);
-        }
-
-        h2{
-            color:#0d3b66;
-            margin-bottom:15px;
-            border-bottom:3px solid #0d3b66;
-            display:inline-block;
-            padding-bottom:5px;
-        }
-
-        .card{
-            background:#f4f4f4;
-            padding:15px;
-            border-radius:8px;
-            margin:10px 0;
-            transition:0.3s;
-        }
-
-        .card:hover{
-            background:#e0f7fa;
-            transform:scale(1.02);
-        }
-
-        .price{
-            color:red;
-            font-weight:bold;
-        }
-
-        form{
-            margin-top:20px;
-        }
-
-        input, textarea{
-            width:100%;
-            padding:10px;
-            margin:10px 0;
-            border-radius:5px;
-            border:1px solid #ccc;
-        }
-
-        button{
-            background:#0d3b66;
-            color:white;
-            padding:10px 20px;
-            border:none;
-            border-radius:5px;
-            cursor:pointer;
-        }
-
-        button:hover{
-            background:#144f8b;
-        }
-
-        footer{
-            text-align:center;
-            padding:20px;
-            background:#0d3b66;
-            color:white;
-            margin-top:30px;
-        }
-
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Du Lịch Đà Nẵng</title>
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <header>
-    <h1>DU LỊCH ĐÀ NẴNG</h1>
-    <p>Website chia sẻ kinh nghiệm du lịch dành cho mọi người</p>
+  <h1>Du Lịch Đà Nẵng</h1>
+  <p class="subtitle">Khám phá thành phố biển năng động của Việt Nam</p>
 </header>
 
 <nav>
-    <a href="#diadiem">Địa Điểm</a>
-    <a href="#khachsan">Khách Sạn</a>
-    <a href="#phuongtien">Phương Tiện</a>
-    <a href="#lotrinh">Lộ Trình</a>
-    <a href="#congty">Công Ty Tour</a>
-    <a href="#review">Review</a>
+  <a href="index.html" class="active">Trang Chủ</a>
+  <a href="diadiem.html">Địa Điểm</a>
+  <a href="khachsan.html">Khách Sạn</a>
+  <a href="phuongtien.html">Phương Tiện</a>
+  <a href="lotrinh.html">Lộ Trình</a>
+  <a href="congty.html">Công Ty Tour</a>
+  <a href="amthuc.html">Ẩm Thực</a>
+  <a href="review.html">Review</a>
 </nav>
 
-<section id="diadiem">
-    <h2>Những Nơi Đẹp Ở Đà Nẵng</h2>
-
-    <div class="card">
-        <h3>🌉 Cầu Rồng</h3>
-        <p><!-- Bạn chỉnh nội dung ở đây --></p>
-    </div>
-
-    <div class="card">
-        <h3>🏖️ Bãi Biển Mỹ Khê</h3>
-        <p><!-- Bạn chỉnh nội dung ở đây --></p>
-    </div>
-
-    <div class="card">
-        <h3>⛰️ Bà Nà Hills</h3>
-        <p><!-- Bạn chỉnh nội dung ở đây --></p>
-    </div>
+<section class="hero">
+  <img src="https://images.unsplash.com/photo-1598935898639-81586f7d2129" alt="Cầu Rồng Đà Nẵng vào ban đêm">
+  <div class="hero-text">
+    <h2>Thành phố của những cây cầu</h2>
+    <p>Từ bãi biển Mỹ Khê đến Bà Nà Hills, Đà Nẵng luôn sẵn sàng chào đón bạn.</p>
+  </div>
 </section>
 
-<section id="khachsan">
-    <h2>Khách Sạn Gợi Ý</h2>
-
-    <div class="card">
-        <h3>Khách Sạn 3 Sao</h3>
-        <p class="price">Giá: <!-- bạn chỉnh giá --></p>
-        <p><!-- mô tả ở đây --></p>
-    </div>
-
-    <div class="card">
-        <h3>Khách Sạn 5 Sao</h3>
-        <p class="price">Giá: <!-- bạn chỉnh giá --></p>
-        <p><!-- mô tả ở đây --></p>
-    </div>
+<section class="grid">
+  <a class="card link" href="diadiem.html">
+    <h3>Địa Điểm Nổi Bật</h3>
+    <p>Cầu Rồng, Bà Nà Hills, Sơn Trà, Ngũ Hành Sơn...</p>
+  </a>
+  <a class="card link" href="khachsan.html">
+    <h3>Khách Sạn</h3>
+    <p>Từ resort cao cấp đến homestay tiện nghi.</p>
+  </a>
+  <a class="card link" href="phuongtien.html">
+    <h3>Phương Tiện</h3>
+    <p>Máy bay, tàu hỏa, xe khách và di chuyển nội thành.</p>
+  </a>
+  <a class="card link" href="lotrinh.html">
+    <h3>Lộ Trình Gợi Ý</h3>
+    <p>Kế hoạch 3N2Đ tối ưu thời gian và chi phí.</p>
+  </a>
+  <a class="card link" href="congty.html">
+    <h3>Công Ty Tour</h3>
+    <p>Đặt tour uy tín, dịch vụ trọn gói cho gia đình.</p>
+  </a>
+  <a class="card link" href="video.html">
+    <h3>Video Giới Thiệu</h3>
+    <p>Xem nhanh cảnh đẹp Đà Nẵng qua video chọn lọc.</p>
+  </a>
+  <a class="card link" href="danhgia.html">
+    <h3>Bài Viết Đánh Giá</h3>
+    <p>Đọc kinh nghiệm của những người đi trước.</p>
+  </a>
+  <a class="card link" href="review.html">
+    <h3>Viết Review</h3>
+    <p>Chia sẻ trải nghiệm, mẹo hay và hình ảnh chuyến đi.</p>
+  </a>
 </section>
 
-<section id="phuongtien">
-    <h2>Nên Đi Bằng Phương Tiện Nào?</h2>
-
-    <div class="card">
-        <h3>✈️ Máy Bay</h3>
-        <p><!-- nội dung chỉnh ở đây --></p>
-    </div>
-
-    <div class="card">
-        <h3>🚆 Tàu Hỏa</h3>
-        <p><!-- nội dung chỉnh ở đây --></p>
-    </div>
-
-    <div class="card">
-        <h3>🚌 Xe Khách</h3>
-        <p><!-- nội dung chỉnh ở đây --></p>
-    </div>
+<section>
+  <div class="card">
+    <h3>Gợi ý nhanh</h3>
+    <ul class="tips">
+      <li>Xem Cầu Rồng phun lửa vào tối thứ 7 và Chủ nhật.</li>
+      <li>Tắm biển Mỹ Khê buổi sáng sớm để ngắm bình minh.</li>
+      <li>Mua đặc sản: chả bò, mè xửng, mực một nắng.</li>
+    </ul>
+  </div>
 </section>
 
-<section id="lotrinh">
-    <h2>Lộ Trình Gợi Ý</h2>
-    <div class="card">
-        <p><!-- Bạn viết lộ trình 2N1Đ hoặc 3N2Đ tại đây --></p>
-    </div>
-</section>
-
-<section id="congty">
-    <h2>Thông Tin Công Ty Tour Du Lịch</h2>
-    <div class="card">
-        <p><!-- Bạn chỉnh thông tin công ty tại đây --></p>
-    </div>
-</section>
-
-<section id="review">
-    <h2>Đăng Bài Review</h2>
-
-    <form>
-        <label>Họ Tên:</label>
-        <input type="text" placeholder="Nhập tên của bạn">
-
-        <label>Địa Điểm Đã Đến:</label>
-        <input type="text" placeholder="Ví dụ: Bà Nà Hills">
-
-        <label>Nội Dung Review:</label>
-        <textarea rows="5" placeholder="Chia sẻ cảm nhận của bạn..."></textarea>
-
-        <button type="submit">Gửi Review</button>
-    </form>
-</section>
-
-<footer>
-    <p>© 2026 Website Du Lịch Đà Nẵng | Thiết kế bởi Học Sinh Lớp 12</p>
-</footer>
+<footer>© 2026 Du Lịch Đà Nẵng — Email: <a href="mailto:nguyentienkhoatyem1234@gmail.com">nguyentienkhoatyem1234@gmail.com</a> — SĐT: <a href="tel:0708351298">0708351298</a> — HS THPT ÔNG ÍCH KHIÊM K55</footer>
 
 </body>
 </html>
